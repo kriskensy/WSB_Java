@@ -205,7 +205,7 @@ public class Client extends JFrame {
         } else {
             output.println("ADD_PRODUCT," + producer + "," + name + "," + quantity + "," + price);
             try {
-                String response = input.readLine();
+                String response = input.readLine().replaceAll(",", "\n");
                 resultArea.setText(response);
             } catch (IOException e) {
                 e.printStackTrace();
@@ -231,7 +231,7 @@ public class Client extends JFrame {
         } else {
             output.println("MODIFY_QUANTITY," + id + "," + quantity);
             try {
-                String response = input.readLine();
+                String response = input.readLine().replaceAll(",", "\n");
                 resultArea.setText(response);
             } catch (IOException e) {
                 e.printStackTrace();

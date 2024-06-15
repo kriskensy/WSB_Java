@@ -8,8 +8,8 @@ public class Server {
     private static final int PORT = 12345;
     private static Connection connection;
 
-    public static void main(String[] args) { //todo - wyswietlanie komunikatow (ich dzielenie od nowej linii ) w polu tekstowym
-        //todo - nie dziala poprawnie. Jesli usune separatory to tekst w jednej linii jest okej ale jego podzial nie dziala
+    public static void main(String[] args) {
+
         try {
             connection = Main.getConnection();
 
@@ -78,9 +78,7 @@ public class Server {
                     preparedStatement.setInt(3, quantity);
                     preparedStatement.setDouble(4, price);
                     preparedStatement.executeUpdate();
-                    writer.println("Product added: Producer: " + producer + ", Name: " + name + ", Quantity: " + quantity + ", Price: " + price);
-                    //todo
-//                    writer.println("Product added:\nProducer: " + producer + "\nName: " + name + "\nQuantity: " + quantity + "\nPrice: " + price);
+                    writer.println("Product added: ,Producer: " + producer + ",Name: " + name + ",Quantity: " + quantity + ",Price: " + price);
 
                 } else if (request.startsWith("MODIFY_QUANTITY")) {
 
@@ -93,9 +91,7 @@ public class Server {
                     preparedStatement.setInt(1, quantity);
                     preparedStatement.setInt(2, id);
                     preparedStatement.executeUpdate();
-                    writer.println("Product updated: Id: " + id + ", New quantity: " + quantity);
-                    //todo
-//                    writer.println("Product updated:\n Id: " + id + "\n New quantity: " + quantity);
+                    writer.println("Product updated: ,Id: " + id + ",New quantity: " + quantity);
 
                 } else if (request.startsWith("REPORT_PROBLEM")) {
 

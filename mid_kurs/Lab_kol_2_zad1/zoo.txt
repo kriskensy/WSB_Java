@@ -1,0 +1,8 @@
+Elephant;2;2021-11-23;4.7;3000;size: big;lifespan: long
+Gorilla;8;2022-03-10;4.2;2500;size: big;lifespan: medium
+Tiger;4;2022-02-28;4.8;1800;size: medium;lifespan: short
+Penguin;20;2022-04-05;4.0;1200;size: small;lifespan: long
+Giraffe;6;2022-03-15;4.3;2800;size: big;lifespan: long
+Panda;3;2022-02-10;4.6;2200;size: medium;lifespan: medium
+Elephant;2;2021-11-23;4.7;3000;size: big;lifespan: long
+Lion;3;2019-10-15;5.0;4000;size: medium;lifespan: long
